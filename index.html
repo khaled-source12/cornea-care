@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title id="pageTitle">مركز علاج القرنية المخروطية وزراعة القرنية في مصر | دكتور محمد النجار</title>
+    <meta name="description" id="metaDesc" content="المركز المتخصص في علاج القرنية المخروطية، تثبيت القرنية بالفيمتو، زراعة الحلقات، وجراحات زراعة القرنية الجزئية (DALK) في مصر مع د. محمد النجار.">
+    <meta name="keywords" content="القرنية المخروطية مصر, تثبيت القرنية, زراعة حلقات القرنية, زراعة القرنية DALK, دكتور محمد النجار, Cornea Care Egypt">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://corneacareegypt.com">
+
+    <!-- Open Graph / WhatsApp / Facebook SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://corneacareegypt.com">
+    <meta property="og:title" content="مركز Cornea Care Egypt | علاج القرنية المخروطية وزراعة القرنية">
+    <meta property="og:description" content="حلول متقدمة لعلاج القرنية المخروطية وجراحات القرنية الدقيقة مع استشاري جراحات القرنية د. محمد النجار.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Medical SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalClinic",
+          "@id": "https://corneacareegypt.com/#clinic",
+          "name": "Cornea Care Egypt - Specialised Cornea & Keratoconus Center",
+          "url": "https://corneacareegypt.com",
+          "logo": "https://corneacareegypt.com/images/logo.png",
+          "medicalSpecialty": "Ophthalmology",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Eterna Medical City, Building 47, Sector 3",
+            "addressLocality": "New Cairo",
+            "addressRegion": "Cairo",
+            "addressCountry": "EG"
+          },
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Physician",
+          "name": "Dr. Mohamed El Naggar",
+          "jobTitle": "Consultant Corneal & Refractive Surgeon",
+          "medicalSpecialty": "Ophthalmology",
+          "worksFor": { "@id": "https://corneacareegypt.com/#clinic" }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --navy: #0A192F;
+            --teal: #00B4D8;
+            --teal-dark: #0077B6;
+            --light-bg: #F8FAFC;
+            --white: #FFFFFF;
+            --dark-text: #1E293B;
+            --muted: #64748B;
+            --border: #E2E8F0;
+            --gold: #FFB703;
+            --whatsapp: #25D366;
+            --radius: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Cairo', sans-serif; background: var(--light-bg); color: var(--dark-text); line-height: 1.6; }
+
+        /* Header Navigation */
+        nav { position: sticky; top: 0; z-index: 1000; background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 14px 0; }
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #fff; text-decoration: none; }
+        .logo span { color: var(--teal); }
+        .nav-right { display: flex; align-items: center; gap: 15px; }
+        .lang-btn { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 14px; border-radius: 50px; cursor: pointer; font-size: 13px; font-weight: 600; }
+        .header-cta { background: var(--teal); color: #fff; text-decoration: none; padding: 8px 18px; border-radius: 50px; font-weight: 700; font-size: 13px; transition: 0.2s; }
+        .header-cta:hover { background: var(--teal-dark); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--navy) 0%, #001E3D 100%); color: #fff; padding: 70px 0 80px; text-align: center; position: relative; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 180, 216, 0.15); border: 1px solid var(--teal); color: var(--teal); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 700; margin-bottom: 20px; }
+        .hero h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.3; margin-bottom: 16px; color: #fff; }
+        .hero p { font-size: 17px; color: #94A3B8; max-width: 720px; margin: 0 auto 30px; }
+        .hero-actions { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-primary { background: var(--teal); color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 50px; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3); transition: 0.2s; }
+        .btn-whatsapp { background: var(--whatsapp); color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 50px; font-weight: 700; font-size: 16px; display: inline-flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .btn-primary:hover { background: var(--teal-dark); }
+
+        /* Treatment Cards Section */
+        .section-title { text-align: center; margin: 60px 0 35px; }
+        .section-title h2 { font-size: 30px; color: var(--navy); font-weight: 800; }
+        .section-title p { color: var(--muted); font-size: 15px; }
+
+        .treatments-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: 0.3s; position: relative; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-color: var(--teal); }
+        .card-icon { width: 50px; height: 50px; background: rgba(0, 180, 216, 0.1); color: var(--teal); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+        .card h3 { font-size: 20px; color: var(--navy); font-weight: 700; margin-bottom: 12px; }
+        .card p { color: var(--muted); font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
+        .card-link { color: var(--teal-dark); font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 5px; }
+
+        /* Lead Capture Form Section */
+        .lead-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; margin-bottom: 60px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); }
+        .lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-weight: 700; font-size: 13px; margin-bottom: 6px; color: var(--navy); }
+        .form-group input, .form-group select { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 14px; }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--teal); }
+        .submit-btn { width: 100%; background: var(--navy); color: #fff; border: none; padding: 14px; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: 0.2s; }
+        .submit-btn:hover { background: var(--teal-dark); }
+
+        /* Doctor Credentials Section */
+        .doc-section { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 40px; display: grid; grid-template-columns: 1fr 2fr; gap: 30px; align-items: center; margin-bottom: 60px; }
+        .doc-img { width: 100%; border-radius: var(--radius); object-fit: cover; height: 260px; border: 2px solid var(--teal); }
+        .doc-info h3 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+        .doc-info .title { color: var(--teal); font-weight: 700; font-size: 15px; margin-bottom: 16px; }
+        .doc-info p { color: #94A3B8; font-size: 14px; margin-bottom: 15px; }
+
+        /* Floating WhatsApp Button for Ad Leads */
+        .float-wa { position: fixed; bottom: 20px; left: 20px; background: var(--whatsapp); color: #fff; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 2000; text-decoration: none; }
+
+        footer { text-align: center; padding: 30px 0; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+
+        @media (max-width: 768px) {
+            .lead-grid, .doc-section { grid-template-columns: 1fr; }
+            .doc-img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" class="logo">CorneaCare <span>Egypt</span></a>
+            <div class="nav-right">
+                <button onclick="toggleLang()" class="lang-btn" id="langBtn">English</button>
+                <a href="#booking" class="header-cta" id="headerCta">احجز كشف القرنية</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge" id="heroBadge">👁️ المركز المتخصص لجراحات القرنية والقرنية المخروطية</div>
+            <h1 id="heroTitle">استعِد ثبات قرنيتك ووضوح رؤيتك بأحدث التقنيات الطبية</h1>
+            <p id="heroSub">بروتوكولات علاجية متكاملة للقرنية المخروطية، تثبيت القرنية بالفيمتو، زراعة الحلقات، وجراحات زراعة القرنية الجزئية (DALK) تحت إشراف د. محمد النجار.</p>
+            <div class="hero-actions">
+                <a href="#booking" class="btn-primary" id="heroBtn1">احجز فحص القرنية الشامل</a>
+                <a href="https://wa.me/201000000000?text=أرغب%20في%20حجز%20استشارة%20قرنية%20مخروطية" target="_blank" class="btn-whatsapp" id="heroBtn2">📱 استشارة سريعة واتساب</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="section-title">
+            <h2 id="servicesTitle">الخدمات والعلاجات التخصصية للقرنية</h2>
+            <p id="servicesSub">تقييم دقيق لخريطة القرنية الخماسية (Pentacam) لاختيار الحل الأنسب لحالتك</p>
+        </section>
+
+        <div class="treatments-grid">
+            <div class="card">
+                <div class="card-icon">1</div>
+                <h3 id="s1Title">تثبيت القرنية (Cross-Linking)</h3>
+                <p id="s1Desc">إجراء أمن وفعال لإيقاف تدهور القرنية المخروطية وتقوية ألياف القرنية باستخدام الأشعة فوق البنفسجية وفيتامين B2.</p>
+                <a href="#booking" class="card-link" id="s1Link">احجز فحص التثبيت 👈</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">2</div>
+                <h3 id="s2Title">زراعة الحلقات بالفيمتو ثانية</h3>
+                <p id="s2Desc">زرع حلقات دقيقة داخل القرنية لتعديل التحدب الزائد وتحسين جودة النظر وتقليل الاستجماتيزم العالي.</p>
+                <a href="#booking" class="card-link" id="s2Link">استكشف خيارات الحلقات 👈</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">3</div>
+                <h3 id="s3Title">زراعة القرنية الجزئية (DALK)</h3>
+                <p id="s3Desc">جراحة متقدمة لتبديل الطبقات الخارجية المعتمدة للقرنية مع الحفاظ على طبقة الأندوثيليوم الطبيعية لتقليل احتمالية الرفض.</p>
+                <a href="#booking" class="card-link" id="s3Link">استشارة جراحة DALK 👈</a>
+            </div>
+        </div>
+
+        <section class="lead-section" id="booking">
+            <div class="lead-grid">
+                <div>
+                    <h2 style="font-size:26px; color:var(--navy); margin-bottom:12px;" id="formTitle">احجز كشف وفحص القرنية الآن</h2>
+                    <p style="color:var(--muted); font-size:14px; margin-bottom:20px;" id="formSub">قم بتعبئة بياناتك وسيقوم الفريق الطبي بالتواصل معك لتأكيد الموعد وإجراء تصوير القرنية الخماسي (Pentacam).</p>
+                    <div style="background:var(--light-bg); padding:16px; border-radius:8px; border-right:4px solid var(--teal);">
+                        <p style="font-weight:700; font-size:13px; color:var(--navy);" id="formNotice">📍 العيادة: إيتيرنا ميديكال سيتي - التجمع الخامس - القاهرة الجديدة</p>
+                    </div>
+                </div>
+
+                <form onsubmit="event.preventDefault(); alert('تم استلام طلبك بنجاح! سيتم التواصل معك خلال ساعات.');">
+                    <div class="form-group">
+                        <label id="lbl1">الاسم بالكامل</label>
+                        <input type="text" placeholder="أدخل اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl2">رقم الهاتف / الواتساب</label>
+                        <input type="tel" placeholder="01xxxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl3">الإجراء المطلوب / الحالة</label>
+                        <select>
+                            <option id="opt1">فحص وتقييم قرنية مخروطية</option>
+                            <option id="opt2">تثبيت قرنية (Cross-linking)</option>
+                            <option id="opt3">زراعة حلقات (Keraring)</option>
+                            <option id="opt4">استشارة زراعة قرنية (DALK)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn" id="subBtn">تأكيد طلب الحجز</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="دكتور محمد النجار استشاري جراحات القرنية" class="doc-img">
+            <div class="doc-info">
+                <h3 id="docTitle">دكتور محمد النجار</h3>
+                <div class="title" id="docSub">استشاري جراحات القرنية وتصحيح النظر والكتاراكت</div>
+                <p id="docDesc">خبرة واسعة في إدارة حالات القرنية المخروطية المعقدة، جراحات زراعة القرنية الطبقية (DALK)، واستخدام أحدث أجهزة الفيمتو ثانية والفحص الخماسي للقرنية لضمان أعلى درجات الأمان ودقة النتائج.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/201000000000?text=أرغب%20في%20حجز%20استشارة%20قرنية%20مخروطية" class="float-wa" target="_blank" aria-label="WhatsApp">📱</a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cornea Care Egypt — جميع الحقوق محفوظة | تحت إشراف د. محمد النجار</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() {
+            const html = document.getElementById('htmlTag');
+            const isAr = html.getAttribute('lang') === 'ar';
+
+            if (isAr) {
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                document.getElementById('langBtn').innerText = 'عربي';
+                document.getElementById('headerCta').innerText = 'Book Assessment';
+                document.getElementById('heroBadge').innerText = '👁️ Specialised Keratoconus & Cornea Center';
+                document.getElementById('heroTitle').innerText = 'Restore Corneal Stability and Clear Vision with Advanced Care';
+                document.getElementById('heroSub').innerText = 'Comprehensive protocols for Keratoconus, Corneal Cross-linking, Intracorneal Rings, and DALK surgeries by Dr. Mohamed El Naggar.';
+                document.getElementById('heroBtn1').innerText = 'Book Corneal Mapping';
+                document.getElementById('heroBtn2').innerText = '📱 WhatsApp Inquiry';
+                
+                document.getElementById('servicesTitle').innerText = 'Specialised Corneal Treatments';
+                document.getElementById('servicesSub').innerText = 'Precise Pentacam mapping to evaluate stability and select the optimal procedure';
+                
+                document.getElementById('s1Title').innerText = 'Corneal Cross-Linking (CXL)';
+                document.getElementById('s1Desc').innerText = 'Safe procedure to halt keratoconus progression and strengthen corneal fibers using UV light and Vitamin B2.';
+                document.getElementById('s1Link').innerText = 'Book CXL Screening 👈';
+
+                document.getElementById('s2Title').innerText = 'Femto-Intracorneal Ring Segments';
+                document.getElementById('s2Desc').innerText = 'Implanting micro-rings into the cornea to reduce steepening, improve visual acuity, and manage high astigmatism.';
+                document.getElementById('s2Link').innerText = 'Explore Ring Options 👈';
+
+                document.getElementById('s3Title').innerText = 'DALK Corneal Surgery';
+                document.getElementById('s3Desc').innerText = 'Deep Anterior Lamellar Keratoplasty replacing diseased outer corneal layers while preserving healthy endothelium.';
+                document.getElementById('s3Link').innerText = 'Consult for DALK 👈';
+
+                document.getElementById('formTitle').innerText = 'Book Your Corneal Consultation';
+                document.getElementById('formSub').innerText = 'Fill in your details and our team will contact you to confirm your Pentacam assessment.';
+                document.getElementById('formNotice').innerText = '📍 Clinic: Eterna Medical City, Building 47, New Cairo';
+
+                document.getElementById('lbl1').innerText = 'Full Name';
+                document.getElementById('lbl2').innerText = 'Phone / WhatsApp Number';
+                document.getElementById('lbl3').innerText = 'Required Procedure / Condition';
+                document.getElementById('opt1').innerText = 'Keratoconus Evaluation';
+                document.getElementById('opt2').innerText = 'Corneal Cross-linking (CXL)';
+                document.getElementById('opt3').innerText = 'Intracorneal Rings (Keraring)';
+                document.getElementById('opt4').innerText = 'DALK Surgery Consultation';
+                document.getElementById('subBtn').innerText = 'Confirm Booking Request';
+
+                document.getElementById('docTitle').innerText = 'Dr. Mohamed El Naggar';
+                document.getElementById('docSub').innerText = 'Consultant Corneal & Refractive Surgeon';
+                document.getElementById('docDesc').innerText = 'Specialized in complex keratoconus management, lamellar corneal transplants (DALK), and advanced femtosecond laser procedures.';
+            } else {
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                document.getElementById('langBtn').innerText = 'English';
+                document.getElementById('headerCta').innerText = 'احجز كشف القرنية';
+                document.getElementById('heroBadge').innerText = '👁️ المركز المتخصص لجراحات القرنية والقرنية المخروطية';
+                document.getElementById('heroTitle').innerText = 'استعِد ثبات قرنيتك ووضوح رؤيتك بأحدث التقنيات الطبية';
+                document.getElementById('heroSub').innerText = 'بروتوكولات علاجية متكاملة للقرنية المخروطية، تثبيت القرنية بالفيمتو، زراعة الحلقات، وجراحات زراعة القرنية الجزئية (DALK) تحت إشراف د. محمد النجار.';
+                document.getElementById('heroBtn1').innerText = 'احجز فحص القرنية الشامل';
+                document.getElementById('heroBtn2').innerText = '📱 استشارة سريعة واتساب';
+                
+                document.getElementById('servicesTitle').innerText = 'الخدمات والعلاجات التخصصية للقرنية';
+                document.getElementById('servicesSub').innerText = 'تقييم دقيق لخريطة القرنية الخماسية (Pentacam) لاختيار الحل الأنسب لحالتك';
+                
+                document.getElementById('s1Title').innerText = 'تثبيت القرنية (Cross-Linking)';
+                document.getElementById('s1Desc').innerText = 'إجراء أمن وفعال لإيقاف تدهور القرنية المخروطية وتقوية ألياف القرنية باستخدام الأشعة فوق البنفسجية وفيتامين B2.';
+                document.getElementById('s1Link').innerText = 'احجز فحص التثبيت 👈';
+
+                document.getElementById('s2Title').innerText = 'زراعة الحلقات بالفيمتو ثانية';
+                document.getElementById('s2Desc').innerText = 'زرع حلقات دقيقة داخل القرنية لتعديل التحدب الزائد وتحسين جودة النظر وتقليل الاستجماتيزم العالي.';
+                document.getElementById('s2Link').innerText = 'استكشف خيارات الحلقات 👈';
+
+                document.getElementById('s3Title').innerText = 'زراعة القرنية الجزئية (DALK)';
+                document.getElementById('s3Desc').innerText = 'جراحة متقدمة لتبديل الطبقات الخارجية المعتمدة للقرنية مع الحفاظ على طبقة الأندوثيليوم الطبيعية لتقليل احتمالية الرفض.';
+                document.getElementById('s3Link').innerText = 'استشارة جراحة DALK 👈';
+
+                document.getElementById('formTitle').innerText = 'احجز كشف وفحص القرنية الآن';
+                document.getElementById('formSub').innerText = 'قم بتعبئة بياناتك وسيقوم الفريق الطبي بالتواصل معك لتأكيد الموعد وإجراء تصوير القرنية الخماسي (Pentacam).';
+                document.getElementById('formNotice').innerText = '📍 العيادة: إيتيرنا ميديكال سيتي - التجمع الخامس - القاهرة الجديدة';
+
+                document.getElementById('lbl1').innerText = 'الاسم بالكامل';
+                document.getElementById('lbl2').innerText = 'رقم الهاتف / الواتساب';
+                document.getElementById('lbl3').innerText = 'الإجراء المطلوب / الحالة';
+                document.getElementById('opt1').innerText = 'فحص وتقييم قرنية مخروطية';
+                document.getElementById('opt2').innerText = 'تثبيت قرنية (Cross-linking)';
+                document.getElementById('opt3').innerText = 'زراعة حلقات (Keraring)';
+                document.getElementById('opt4').innerText = 'استشارة زراعة قرنية (DALK)';
+                document.getElementById('subBtn').innerText = 'تأكيد طلب الحجز';
+
+                document.getElementById('docTitle').innerText = 'دكتور محمد النجار';
+                document.getElementById('docSub').innerText = 'استشاري جراحات القرنية وتصحيح النظر والكتاراكت';
+                document.getElementById('docDesc').innerText = 'خبرة واسعة في إدارة حالات القرنية المخروطية المعقدة، جراحات زراعة القرنية الطبقية (DALK)، واستخدام أحدث أجهزة الفيمتو ثانية والفحص الخماسي للقرنية لضمان أعلى درجات الأمان ودقة النتائج.';
+            }
+        }
+    </script>
+</body>
+</html>
