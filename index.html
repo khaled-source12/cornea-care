@@ -241,6 +241,70 @@ footer{background:var(--burg);border-top:1px solid rgba(255,255,255,.08);padding
 }
 </style>
 </head>
+<!-- Insert this entire block right above </body> -->
+<script>
+  // Fade-Up Animation Observer
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('vis');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach((el) => obs.observe(el));
+
+  // FAQ Accordion Toggle
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach((i) => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Web3Forms AJAX Form Handler
+  function handleWeb3Form(formEl) {
+    if (!formEl) return;
+    formEl.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = formEl.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      
+      btn.textContent = 'جاري الحجز...';
+      btn.disabled = true;
+
+      const formData = new FormData(formEl);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          window.location.href = 'https://www.corneaegypt.com/thank-you.html';
+        } else {
+          alert('حدث خطأ أثناء إرسال البيانات. برجاء المحاولة مرة أخرى.');
+          btn.disabled = false;
+          btn.textContent = originalText;
+        }
+      })
+      .catch(() => {
+        alert('حدث خطأ في الاتصال. برجاء الاتصال بنا عبر الهاتف أو الواتساب.');
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+
+  // Bind forms
+  handleWeb3Form(document.getElementById('main-form'));
+  handleWeb3Form(document.getElementById('bottom-form'));
+</script>
+</body>
+</html>
+  
+  
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZRLPZN2"
