@@ -160,19 +160,20 @@
             padding: 4rem 1.5rem;
         }
 
-        .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Forces 2 columns side-by-side */
-    gap: 3rem;
-    align-items: center;
+        /* Force Side-by-Side Desktop Layout */
+.hero-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1.1fr 0.9fr !important; /* Text on right, Form on left */
+    gap: 2.5rem !important;
+    align-items: center !important;
 }
 
-/* Keeps side-by-side layout on desktop/tablets, only stacks on mobile screens */
-@media (max-width: 768px) {
+/* Stack vertically ONLY on mobile screens */
+@media screen and (max-width: 768px) {
     .hero-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
 
