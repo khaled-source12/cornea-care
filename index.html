@@ -282,17 +282,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="form-card">
           <div class="form-card-title">احجز فحص القرنية</div>
           <div class="form-card-sub">فحص شامل · فريقنا هيتصل بيك خلال ١٥ دقيقة</div>
-          <form name="keratoconus-ar" id="main-form" method="POST" data-netlify="true" action="/thank-you.html">
-            <input type="hidden" name="form-name" value="keratoconus-ar"/>
-            <input type="hidden" name="service" value="keratoconus"/>
-            <input type="hidden" name="language" value="ar"/>
-            <div class="fg"><label for="name">الاسم بالكامل</label><input type="text" id="name" name="name" placeholder="أحمد محمد" required/></div>
-            <div class="fg"><label for="phone">رقم الموبايل</label><input type="tel" id="phone" name="phone" placeholder="01XX XXX XXXX" required dir="ltr"/></div>
-            <div class="fg"><label for="condition">حالتك</label>
-              <div class="sel-wrap"><select id="condition" name="condition" required><option value="" disabled selected>اختار</option><option>تم تشخيصي حديثاً بالقرنية المخروطية</option><option>عندي قرنية مخروطية وبدور على علاج</option><option>محول من دكتور تاني</option><option>أحد أفراد عائلتي عنده قرنية مخروطية</option></select></div>
-            </div>
-            <button type="submit" class="form-btn">← احجز فحصي</button>
-          </form>
+         <form action="https://formsubmit.co/khaledndovu@gmail.com" method="POST" id="main-form">
+  <!-- Redirection & Config for Vercel -->
+  <input type="hidden" name="_next" value="https://www.corneaegypt.com/thank-you.html">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="حجز جديد - القرنية المخروطية">
+
+  <!-- Trackers -->
+  <input type="hidden" name="service" value="keratoconus"/>
+  <input type="hidden" name="language" value="ar"/>
+
+  <!-- User Inputs -->
+  <div class="fg">
+    <label for="name">الاسم بالكامل</label>
+    <input type="text" id="name" name="name" placeholder="أحمد محمد" required/>
+  </div>
+  
+  <div class="fg">
+    <label for="phone">رقم الموبايل</label>
+    <input type="tel" id="phone" name="phone" placeholder="01XX XXX XXXX" required dir="ltr"/>
+  </div>
+  
+  <div class="fg">
+    <label for="condition">حالتك</label>
+    <div class="sel-wrap">
+      <select id="condition" name="condition" required>
+        <option value="" disabled selected>اختار</option>
+        <option>تم تشخيصي حديثاً بالقرنية المخروطية</option>
+        <option>عندي قرنية مخروطية وبدور على علاج</option>
+        <option>محول من دكتور تاني</option>
+        <option>أحد أفراد عائلتي عنده قرنية مخروطية</option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit" class="form-btn">← احجز فحصي</button>
+</form>
           <p class="form-note">المكالمة الأولى مجانية · بدون أي التزام</p>
           <div class="form-wa">
             <span>تفضل واتساب؟</span>
