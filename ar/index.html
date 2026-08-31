@@ -161,19 +161,20 @@
         }
 
         .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forces 2 columns side-by-side */
+    gap: 3rem;
+    align-items: center;
+}
 
-        @media (max-width: 968px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-            }
-        }
+/* Keeps side-by-side layout on desktop/tablets, only stacks on mobile screens */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
 
         .hero-badge {
             display: inline-block;
