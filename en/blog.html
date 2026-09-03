@@ -1,1 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornea & Vision Health Blog | Dr. Mohamed El-Naggar</title>
+    <meta name="description" content="Read expert medical articles on Keratoconus treatments, Corneal Cross-Linking, Transplants (DALK/PKP), and advanced vision correction by Egypt's leading Cornea Consultant.">
+    <link rel="canonical" href="https://drelnaggar.com/blog/">
+    <link rel="alternate" hreflang="en" href="https://drelnaggar.com/blog/">
+    <link rel="alternate" hreflang="ar" href="https://drelnaggar.com/ar/blog/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZRLPZN2');</script>
+
+    <!-- Structured Data (E-E-A-T & Blog Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://www.corneaegypt.com/en/blog.html/",
+          "name": "Dr. Mohamed El-Naggar Cornea & Vision Blog",
+          "url": "https://www.corneaegypt.com/en/about.html/",
+          "description": "Medical insights, treatment guides, and patient resources on Keratoconus and corneal surgeries in Egypt.",
+          "publisher": {
+            "@type": "Physician",
+            "@id": "https://drelnaggar.com/#physician",
+            "name": "Consultant Dr. Mohamed El-Naggar",
+            "url": "https://www.corneaegypt.com/en/about.html/"
+          }
+        },
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://www.corneaegypt.com/en/about.html/,
+          "url": "https://www.corneaegypt.com/en/about.html/",
+          "name": "Cornea & Keratoconus Medical Articles | Dr. Mohamed El-Naggar",
+          "inLanguage": "en"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-navy: #0A192F;
+            --accent-teal: #00B4D8;
+            --accent-hover: #0077B6;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --bg-light: #F8FAFC;
+            --bg-white: #FFFFFF;
+            --border-color: #E2E8F0;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            direction: ltr;
+            text-align: left;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* Header Navigation */
+        .header-nav {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-links { display: flex; align-items: center; gap: 1.5rem; }
+        .header-links a { font-weight: 600; font-size: 0.95rem; color: var(--text-dark); transition: color 0.2s ease; }
+        .header-links a:hover, .header-links a.active { color: var(--accent-teal); }
+
+        .lang-switch {
+            font-weight: 700;
+            color: var(--accent-teal) !important;
+            border: 1px solid var(--accent-teal);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        /* Hero Header */
+        .hero-blog {
+            background: #0A192F !important;
+            background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+            color: #ffffff !important;
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0, 180, 216, 0.2);
+            color: var(--accent-teal) !important;
+            border: 1px solid var(--accent-teal);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title { font-size: 2.5rem; font-weight: 800; color: #FFFFFF !important; margin-bottom: 0.8rem; }
+        .hero-subtitle { font-size: 1.1rem; color: #E2E8F0 !important; max-width: 650px; margin: 0 auto; }
+
+        /* Main Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 4rem 0; }
+
+        /* Featured Article Card */
+        .featured-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            margin-bottom: 3.5rem;
+        }
+
+        @media (max-width: 868px) { .featured-card { grid-template-columns: 1fr; } }
+
+        .featured-img-placeholder {
+            background: linear-gradient(135deg, #0A192F 0%, #0077B6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-teal);
+            font-size: 3rem;
+            min-height: 280px;
+        }
+
+        .featured-content { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+        .category-tag { font-size: 0.8rem; font-weight: 700; color: var(--accent-teal); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+        .featured-title { font-size: 1.75rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1rem; line-height: 1.3; }
+        .featured-excerpt { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.5rem; }
+
+        /* Article Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 900px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+
+        .article-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-img-placeholder {
+            height: 180px;
+            background: #1E293B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-teal);
+            font-size: 2rem;
+        }
+
+        .article-body { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .article-title { font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin: 0.5rem 0; line-height: 1.4; }
+        .article-excerpt { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
+        
+        .article-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .read-more-link {
+            color: var(--accent-teal);
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* Buttons */
+        .btn-cta {
+            display: inline-block;
+            background: #00B4D8 !important;
+            color: #FFFFFF !important;
+            font-weight: 700;
+            padding: 0.8rem 1.8rem;
+            border-radius: 10px;
+            transition: background 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-cta:hover { background: #0077B6 !important; }
+
+        /* CTA Section */
+        .cta-box {
+            background: #0A192F !important;
+            background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+            color: #FFFFFF !important;
+            border-radius: var(--radius-lg);
+            padding: 3.5rem 2rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 4rem auto 0 auto;
+        }
+
+        .cta-box h2 { color: #FFFFFF !important; font-size: 2rem; margin-bottom: 0.8rem; font-weight: 800; }
+        .cta-box p { color: #E2E8F0 !important; font-size: 1.05rem; max-width: 600px; margin: 0 auto 1.5rem auto; }
+
+        /* Footer */
+        footer {
+            background-color: #0A192F !important;
+            color: #FFFFFF !important;
+            padding: 3.5rem 1.5rem 2rem 1.5rem;
+            text-align: center;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p { color: #FFFFFF !important; margin-bottom: 0.4rem; }
+        footer p strong { color: #00B4D8 !important; font-size: 1.1rem; }
+        .footer-copy { color: #94A3B8 !important; font-size: 0.85rem; margin-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZRLPZN2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="header-container">
+            <div class="header-links">
+                <a href="https://www.corneaegypt.com/en/index.html/">Home</a>
+                <a href="https://www.corneaegypt.com/en/about.html/">Doctor Mohamed El Naggar</a>
+                <a href="https://www.corneaegypt.com/en/blog.html/" class="active">Blog</a>
+            </div>
+            <div>
+                <a href="https://www.corneaegypt.com/ar/index.html/" class="lang-switch">عربي</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-blog">
+        <div class="container">
+            <span class="hero-badge">Medical Insights & Patient Guides</span>
+            <h1 class="hero-title">Cornea & Vision Health Blog</h1>
+            <p class="hero-subtitle">Expert advice and evidence-based clinical guides on Keratoconus, Corneal Transplants, and modern laser procedures by Dr. Mohamed El-Naggar.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Featured Article -->
+            <article class="featured-card">
+                <div class="featured-img-placeholder">👁️</div>
+                <div class="featured-content">
+                    <span class="category-tag">Featured Guide</span>
+                    <h2 class="featured-title"><a href="/blog/keratoconus-treatment-options-egypt/">Understanding Keratoconus: From Early Diagnostics to Advanced Cross-Linking</a></h2>
+                    <p class="featured-excerpt">Discover how modern 3D Pentacam tomography combined with custom Corneal Cross-Linking (CXL) can halt progressive keratoconus and preserve your eyesight without invasive surgery.</p>
+                    <div>
+                        <a href="/blog/keratoconus-treatment-options-egypt/" class="btn-cta">Read Full Article</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Grid -->
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 2rem;">Latest Articles</h2>
+
+            <div class="blog-grid">
+                
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-img-placeholder">🔬</div>
+                    <div class="article-body">
+                        <span class="category-tag">Surgical Innovations</span>
+                        <h3 class="article-title"><a href="#">DALK vs. PKP: Choosing the Right Corneal Transplant Method</a></h3>
+                        <p class="article-excerpt">A breakdown of Deep Anterior Lamellar Keratoplasty (DALK) versus full-thickness transplants and why preserving your natural inner layer reduces rejection risks.</p>
+                        <div class="article-meta">
+                            <span>By Dr. Mohamed El-Naggar</span>
+                            <a href="#" class="read-more-link">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-img-placeholder">⚡</div>
+                    <div class="article-body">
+                        <span class="category-tag">Laser & Vision</span>
+                        <h3 class="article-title"><a href="#">Intracorneal Ring Segments (ICRS) for Keratoconus Explained</a></h3>
+                        <p class="article-excerpt">How Femtosecond-guided ring segment insertion helps reshape irregular corneal curvature to flatten the cone and improve visual clarity.</p>
+                        <div class="article-meta">
+                            <span>By Dr. Mohamed El-Naggar</span>
+                            <a href="#" class="read-more-link">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <div class="article-img-placeholder">🩺</div>
+                    <div class="article-body">
+                        <span class="category-tag">Diagnostics</span>
+                        <h3 class="article-title"><a href="#">Why a Standard Eye Exam Might Miss Early Keratoconus</a></h3>
+                        <p class="article-excerpt">Learn why traditional vision charts are insufficient for detecting early corneal ectasia and how 3D elevation maps reveal subtle structural changes.</p>
+                        <div class="article-meta">
+                            <span>By Dr. Mohamed El-Naggar</span>
+                            <a href="#" class="read-more-link">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="cta-box">
+                <h2>Have Questions About Your Corneal Health?</h2>
+                <p>Schedule a specialized Pentacam diagnostic scan and expert evaluation with Consultant Dr. Mohamed El-Naggar in New Cairo.</p>
+                <a href="https://www.corneaegypt.com/en/index.html/" class="btn-cta">Book a Consultation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Consultant Dr. Mohamed El-Naggar Clinic</strong></p>
+            <p style="color: #94A3B8; font-size: 0.95rem; margin-top: 0.3rem;">Mivida, New Cairo - Eterna Healthcare City</p>
+            <p class="footer-copy">&copy; 2026 All Rights Reserved - Consultant Dr. Mohamed El-Naggar</p>
+        </div>
+    </footer>
+</body>
+</html>
