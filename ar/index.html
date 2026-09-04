@@ -739,12 +739,14 @@
     <div class="container">
         <div class="doctor-profile" style="display: flex; align-items: center; gap: 2rem; direction: rtl;">
             
-            <!-- Image Wrapper -->
-            <div style="width: 160px; height: 160px; min-width: 160px; border-radius: 50%; overflow: hidden; border: 3px solid #00B4D8; box-shadow: 0 4px 12px rgba(10,25,47,0.15); background-color: #0A192F; flex-shrink: 0;">
+            <!-- Fixed Circle Frame -->
+            <div style="width: 160px !important; height: 160px !important; min-width: 160px !important; max-width: 160px !important; min-height: 160px !important; max-height: 160px !important; border-radius: 50% !important; overflow: hidden !important; border: 3px solid #00B4D8; box-shadow: 0 4px 12px rgba(10,25,47,0.15); flex-shrink: 0 !important; position: relative;">
+                
+                <!-- Strictly Constrained Image -->
                 <img src="assets/drnaggar.jpg" 
                      alt="دكتور محمد النجار" 
-                     style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                     onerror="this.src='https://via.placeholder.com/160/0A192F/00B4D8?text=Dr+Naggar'">
+                     style="width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; object-fit: cover !important; object-position: center top !important; display: block !important;">
+            
             </div>
 
             <!-- Doctor Info -->
@@ -762,7 +764,6 @@
         </div>
     </div>
 </section>
-
     <!-- FAQ Accordion -->
     <section class="section section-white">
            <div class="container" style="max-width: 800px;">
