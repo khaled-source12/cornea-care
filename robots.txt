@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Explicitly allow AI Search Engines & Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Link to Sitemap
+Sitemap: https://www.corneaegypt.com/sitemap.xml
