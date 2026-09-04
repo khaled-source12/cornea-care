@@ -4,42 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cornea & Refractive Surgery Insights | Dr. Mohamed El-Naggar</title>
-    <meta name="description" content="Expert insights on Keratoconus, Corneal Cross-Linking, DALK, and LASIK by Dr. Mohamed El-Naggar, leading Cornea Specialist in Egypt.">
+    <meta name="description" content="Expert insights on Keratoconus, Corneal Cross-Linking, DALK, and LASIK by Dr. Mohamed El-Naggar.">
     
-    <link rel="canonical" href="https://www.corneaegypt.com/en/blog.html">
-    <link rel="alternate" hreflang="en" href="https://www.corneaegypt.com/en/blog.html">
-    <link rel="alternate" hreflang="ar" href="https://www.corneaegypt.com/ar/blog.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.corneaegypt.com/en/blog.html">
+    <style>
+        :root {
+            --navy: #0A192F;
+            --teal: #00B4D8;
+            --dark-slate: #1A3038;
+            --light-bg: #F8FAFC;
+            --text-main: #334155;
+            --white: #FFFFFF;
+        }
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.corneaegypt.com/en/blog.html">
-    <meta property="og:title" content="Cornea & Refractive Surgery Insights | Dr. Mohamed El-Naggar">
-    <meta property="og:description" content="Expert insights on Keratoconus, Corneal Cross-Linking, DALK, and LASIK by Dr. Mohamed El-Naggar, leading Cornea Specialist in Egypt.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cornea & Refractive Surgery Insights | Dr. Mohamed El-Naggar">
-    <meta name="twitter:description" content="Expert insights on Keratoconus, Corneal Cross-Linking, DALK, and LASIK in Egypt.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80">
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://www.corneaegypt.com/en/blog.html/#webpage",
-          "url": "https://www.corneaegypt.com/en/blog.html",
-          "name": "Cornea & Refractive Surgery Articles",
-          "description": "Medical articles and patient guides on corneal diseases, keratoconus treatments, and advanced vision correction.",
-          "inLanguage": "en",
-          "author": {
-            "@type": "Physician",
-            "@id": "https://www.corneaegypt.com/#physician",
-            "name": "Dr. Mohamed El-Naggar"
-          },
-          "publisher": {
-            "@type": "Physician",
-            "@id": "https://www.corneaegypt.com/#physician"
-          },
-          "about":
+        header {
+            background-color: var(--navy);
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--teal);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .lang-switch {
+            border: 1px solid var(--teal);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            color: var(--teal) !important;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--dark-slate) 100%);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--teal);
+            display: inline-block;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Strict Image Container Guardrails */
+        .image-wrapper {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-color: var(--dark-slate);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .category-tag {
+            background-color: rgba(0, 180, 216, 0.1);
+            color: var(--teal);
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            align-self: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content h3 {
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            color: var(--teal);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="/en/index.html" class="logo">Dr. Mohamed <span>El-Naggar</span></a>
+            <ul class="nav-links">
+                <li><a href="/en/index.html">Home</a></li>
+                <li><a href="/en/about.html">About</a></li>
+                <li><a href="/en/blog.html">Blog</a></li>
+                <li><a href="/ar/blog.html" class="lang-switch">العربية</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Cornea & Refractive Surgery Insights</h1>
+        <p>Medical advice and treatment guides by Dr. Mohamed El-Naggar.</p>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="blog-grid">
+
+            <!-- Card 1 -->
+            <article class="blog-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" 
+                         alt="Slit lamp examination" width="800" height="450">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Keratoconus</span>
+                    <h3>Corneal Cross-Linking: Stopping Keratoconus Progression</h3>
+                    <p>Learn how Riboflavin (Vitamin B2) and UV light stabilize corneal structure.</p>
+                    <a href="/en/keratoconus-crosslinking.html" class="read-more">Read Full Article &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="blog-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" 
+                         alt="Ophthalmologist inspecting corneal surface" width="800" height="450">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Corneal Transplant</span>
+                    <h3>DALK Surgery: Partial-Thickness Corneal Transplantation</h3>
+                    <p>Why DALK preserves natural endothelium and reduces organ rejection risks.</p>
+                    <a href="/en/dalk-cornea-surgery.html" class="read-more">Read Full Article &rarr;</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dr. Mohamed El-Naggar - Cornea Specialist</p>
+    </footer>
+
+</body>
+</html>
