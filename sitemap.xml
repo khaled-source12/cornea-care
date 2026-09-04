@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Arabic Homepage -->
+  <url>
+    <loc>https://www.corneaegypt.com/ar/index.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Main English Homepage -->
+  <url>
+    <loc>https://www.corneaegypt.com/en/index.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Arabic Blog List -->
+  <url>
+    <loc>https://www.corneaegypt.com/ar/blog.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- English Blog List -->
+  <url>
+    <loc>https://www.corneaegypt.com/en/blog.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Arabic Key Service Articles -->
+  <url>
+    <loc>https://www.corneaegypt.com/ar/keratoconus-treatment-options-egypt.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/dalk-vs-pkp-corneal-transplant.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/intracorneal-ring-segments-icrs.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/dmek-dsaek-partial-corneal-transplant.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/topography-guided-prk-athens-protocol-keratoconus.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/scleral-lenses-advanced-keratoconus-egypt.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/ar/phakic-icl-vs-laser-thin-cornea.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <!-- English Key Service Articles -->
+  <url>
+    <loc>https://www.corneaegypt.com/en/keratoconus-treatment-options-egypt.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/dalk-vs-pkp-corneal-transplant.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/intracorneal-ring-segments-icrs.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/dmek-dsaek-partial-corneal-transplant.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/topography-guided-prk-athens-protocol-keratoconus.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/scleral-lenses-advanced-keratoconus-egypt.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.corneaegypt.com/en/phakic-icl-vs-laser-thin-cornea.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
