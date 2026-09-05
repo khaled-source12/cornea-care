@@ -571,46 +571,50 @@
                 
                 <hr class="form-divider">
 
-                <form id="main-form" name="keratoconus-lead-en" method="POST" data-netlify="true" action="/thank-you-en.html">
-                    <input type="hidden" name="form-name" value="keratoconus-lead-en" />
-                    
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required placeholder="e.g. John Doe">
-                    </div>
+               <form id="main-form" name="keratoconus-lead-en" action="https://formspree.io/f/mjyvebyv" method="POST">
+    
+    <!-- Fallback redirect for Formspree -->
+    <input type="hidden" name="_next" value="https://www.corneaegypt.com/en/thank-you.html">
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="01XX XXX XXXX">
-                    </div>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" class="form-control" required placeholder="e.g. Ahmed Mohamed">
+    </div>
 
-                    <div class="form-group">
-                        <label for="condition">Your Situation</label>
-                        <select id="condition" name="condition" class="form-control" required>
-                            <option value="" disabled selected>Select an option</option>
-                            <option value="not-sure">First Consultation / Not Sure</option>
-                            <option value="diagnosed">Diagnosed with Keratoconus</option>
-                            <option value="vision-changes">Rapid/Frequent Vision Changes</option>
-                        </select>
-                    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="01XX XXX XXXX">
+    </div>
 
-                    <button type="submit" class="btn-submit">
-                        <span>Book My Consultation</span>
-                        <span>→</span>
-                    </button>
+    <div class="form-group">
+        <label for="condition">Your Situation</label>
+        <select id="condition" name="condition" class="form-control" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="not-sure">First Consultation / Not Sure</option>
+            <option value="diagnosed">Diagnosed with Keratoconus</option>
+            <option value="vision-changes">Rapid/Frequent Vision Changes</option>
+        </select>
+    </div>
 
-                    <p class="form-footer-note">Initial call is non-binding and free</p>
+    <button type="submit" class="btn-submit">
+        <span>Book My Consultation</span>
+        <span>→</span>
+    </button>
 
-                    <hr class="form-divider">
+    <p class="form-footer-note">Initial call is non-binding and free</p>
 
-                    <div class="whatsapp-option">
-                        <span>Prefer WhatsApp?</span>
-                        <a href="https://wa.me/201140011556" target="_blank">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                            Chat on WhatsApp
-                        </a>
-                    </div>
-                </form>
+    <hr class="form-divider">
+
+    <div class="whatsapp-option">
+        <span>Prefer WhatsApp?</span>
+        <a href="https://wa.me/201140011556" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Chat on WhatsApp
+        </a>
+    </div>
+</form>
+
+
             </div>
         </div>
     </section>
@@ -825,5 +829,34 @@
             });
         });
     </script>
+
+    <!-- Place this script right before the closing </body> tag -->
+<script>
+  const form = document.getElementById("main-form");
+  
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        // Direct redirect to your English thank-you page
+        window.location.href = "https://www.corneaegypt.com/en/thank-you.html";
+      } else {
+        alert("There was an error submitting your form. Please try again.");
+      }
+    } catch (error) {
+      alert("Connection error. Please check your network and try again.");
+    }
+  });
+</script>
 </body>
 </html>
