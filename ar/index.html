@@ -873,5 +873,34 @@
             });
         });
     </script>
+<script>
+  const form = document.getElementById("main-form");
+  
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        // Redirect directly to your local page without hitting Formspree's intermediate screen
+        window.location.href = "https://www.corneaegypt.com/ar/thank-you.html";
+      } else {
+        alert("حدث خطأ أثناء إرسال البيانات، يرجي المحاولة مرة أخرى.");
+      }
+    } catch (error) {
+      alert("حدث خطأ في الاتصال، يرجي التأكد من الاتصال بالإنترنت.");
+    }
+  });
+</script>
+    
+    
 </body>
 </html>
