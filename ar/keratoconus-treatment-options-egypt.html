@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Schema.org Medical & FAQ Page Markup -->
+    <!-- Schema.org Medical, Breadcrumb & FAQ Page Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,6 +25,29 @@
             "@type": "Person",
             "name": "د. محمد النجار"
           }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "الرئيسية",
+              "item": "https://www.corneaegypt.com/ar/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "المقالات الطبية",
+              "item": "https://www.corneaegypt.com/ar/blog.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "فهم القرنية المخروطية: من التشخيص المبكر إلى التثبيت الضوئي المتقدم",
+              "item": "https://www.corneaegypt.com/ar/keratoconus-treatment-options-egypt.html"
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -113,6 +136,35 @@
             padding: 0.3rem 0.8rem;
             border-radius: 6px;
             font-size: 0.85rem;
+        }
+
+        /* Breadcrumbs styling */
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--accent-teal);
+        }
+
+        .breadcrumbs .separator {
+            color: #94A3B8;
+        }
+
+        .breadcrumbs .current {
+            color: var(--primary-navy);
+            font-weight: 600;
         }
 
         /* Article Container */
@@ -295,7 +347,7 @@
             <div class="header-links">
                 <a href="https://www.corneaegypt.com/ar/index.html">الرئيسية</a>
                 <a href="https://www.corneaegypt.com/ar/about.html">عن الدكتور</a>
-                <a href="https://www.corneaegypt.com/ar/blog.html">المدونة</a>
+                <a href="https://www.corneaegypt.com/ar/blog.html">المقالات الطبية</a>
                 <a href="https://www.corneaegypt.com/en/keratoconus-treatment-options-egypt.html" class="lang-switch">English</a>
             </div>
         </div>
@@ -303,6 +355,15 @@
 
     <!-- Main Article Section -->
     <main class="article-container">
+        <!-- Breadcrumbs Navigation -->
+        <nav class="breadcrumbs" aria-label="مسار التصفح">
+            <a href="https://www.corneaegypt.com/ar/index.html">الرئيسية</a>
+            <span class="separator">/</span>
+            <a href="https://www.corneaegypt.com/ar/blog.html">المقالات الطبية</a>
+            <span class="separator">/</span>
+            <span class="current">فهم القرنية المخروطية</span>
+        </nav>
+
         <header class="article-header">
             <span class="article-badge">القرنية المخروطية والتثبيت</span>
             <h1 class="article-title">فهم القرنية المخروطية: من التشخيص المبكر إلى التثبيت الضوئي المتقدم</h1>
