@@ -11,7 +11,7 @@ html_content = """<!DOCTYPE html>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Schema.org Medical, Breadcrumb & FAQ Page Markup -->
     <script type="application/ld+json">
@@ -77,14 +77,14 @@ html_content = """<!DOCTYPE html>
 
     <style>
         :root {
-            --primary-navy: #0A192F;
-            --accent-teal: #00B4D8;
-            --accent-hover: #0077B6;
-            --text-dark: #1E293B;
-            --text-muted: #64748B;
-            --bg-light: #F8FAFC;
+            --primary-navy: #123C3A;
+            --accent-teal: #087F78;
+            --accent-hover: #06655F;
+            --text-dark: #243735;
+            --text-muted: #5D706D;
+            --bg-light: #F7F6F2;
             --bg-white: #FFFFFF;
-            --border-color: #E2E8F0;
+            --border-color: #DDE5E1;
             --radius-md: 12px;
             --radius-lg: 16px;
         }
@@ -97,7 +97,7 @@ html_content = """<!DOCTYPE html>
         }
 
         body {
-            font-family: 'Cairo', 'DM Sans', sans-serif;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
             color: var(--text-dark);
             background-color: var(--bg-light);
             line-height: 1.8;
@@ -179,7 +179,7 @@ html_content = """<!DOCTYPE html>
 
         .article-badge {
             display: inline-block;
-            background: rgba(0, 180, 216, 0.1);
+            background: rgba(8, 127, 120, 0.1);
             color: var(--accent-teal);
             padding: 0.3rem 0.8rem;
             border-radius: 50px;
@@ -190,7 +190,7 @@ html_content = """<!DOCTYPE html>
 
         .article-title {
             font-size: 2.2rem;
-            font-weight: 800;
+            font-weight: 700;
             color: var(--primary-navy);
             line-height: 1.35;
             margin-bottom: 1rem;
@@ -278,12 +278,12 @@ html_content = """<!DOCTYPE html>
         }
 
         .comparison-table tr:nth-child(even) {
-            background-color: #F8FAFC;
+            background-color: #F7F6F2;
         }
 
         /* Lead Form Box */
         .article-cta-box {
-            background: linear-gradient(135deg, var(--primary-navy) 0%, #1E3A8A 100%);
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #205B56 100%);
             color: #ffffff;
             padding: 2.5rem;
             border-radius: var(--radius-md);
@@ -299,7 +299,7 @@ html_content = """<!DOCTYPE html>
         }
 
         .article-cta-box p {
-            color: #E2E8F0;
+            color: #DDE5E1;
             font-size: 0.95rem;
             margin-bottom: 1.5rem;
         }
@@ -310,7 +310,7 @@ html_content = """<!DOCTYPE html>
             display: block;
             margin-bottom: 0.4rem;
             font-size: 0.85rem;
-            color: #E2E8F0;
+            color: #DDE5E1;
         }
 
         .form-control {
@@ -378,13 +378,14 @@ html_content = """<!DOCTYPE html>
             .comparison-table th, .comparison-table td { padding: 0.6rem 0.5rem; }
         }
     </style>
+<link rel="stylesheet" href="../assets/theme.css">
 </head>
 <body>
 
     <!-- Header Navigation -->
     <header class="header-nav">
         <div class="header-container">
-            <a href="https://www.corneaegypt.com/ar/index.html" style="font-weight: 800; color: var(--primary-navy); font-size: 1.2rem;">د. محمد النجار</a>
+            <a href="https://www.corneaegypt.com/ar/index.html" style="font-weight: 700; color: var(--primary-navy); font-size: 1.2rem;">د. محمد النجار</a>
             <div class="header-links">
                 <a href="https://www.corneaegypt.com/ar/index.html">الرئيسية</a>
                 <a href="https://www.corneaegypt.com/ar/about.html">عن الدكتور</a>

@@ -1,0 +1,25 @@
+/* Shared website theme: edit these values for future brand updates. */
+:root {
+  --primary-navy: #123C3A;
+  --accent-teal: #087F78;
+  --accent-hover: #06655F;
+  --text-dark: #243735;
+  --text-muted: #5D706D;
+  --bg-light: #F7F6F2;
+  --bg-white: #FFFFFF;
+  --border-color: #DDE5E1;
+  --primary: #123C3A;
+  --secondary: #087F78;
+  --accent: #087F78;
+  --cream: #F7F6F2;
+  --burg: #123C3A;
+  --burg2: #06655F;
+  --bronze: #087F78;
+  --text: #243735;
+  --muted: #5D706D;
+  --white: #FFFFFF;
+  --border: #DDE5E1;
+}
+body { font-family: 'Inter', sans-serif; }
+html[lang="ar"] body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+button, input, select, textarea { font-family: inherit; }

@@ -28,7 +28,7 @@
     <!-- Google Fonts (Cairo & Alexandra for Arabic typography) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -89,14 +89,14 @@
 
     <style>
         :root {
-            --primary-navy: #0A192F;
-            --accent-teal: #00B4D8;
-            --accent-hover: #0077B6;
-            --text-dark: #1E293B;
-            --text-muted: #64748B;
-            --bg-light: #F8FAFC;
+            --primary-navy: #123C3A;
+            --accent-teal: #087F78;
+            --accent-hover: #06655F;
+            --text-dark: #243735;
+            --text-muted: #5D706D;
+            --bg-light: #F7F6F2;
             --bg-white: #FFFFFF;
-            --border-color: #E2E8F0;
+            --border-color: #DDE5E1;
             --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
             --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
             --radius-md: 12px;
@@ -106,7 +106,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-            font-family: 'Alexandria', 'Cairo', sans-serif;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
             color: var(--text-dark);
             background-color: var(--bg-light);
             line-height: 1.7;
@@ -150,8 +150,8 @@
 
         /* Hero Header */
         .hero-blog {
-            background: #0A192F !important;
-            background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+            background: #123C3A !important;
+            background: linear-gradient(135deg, #123C3A 0%, #205B56 100%) !important;
             color: #ffffff !important;
             padding: 4rem 1.5rem;
             text-align: center;
@@ -159,7 +159,7 @@
 
         .hero-badge {
             display: inline-block;
-            background: rgba(0, 180, 216, 0.2);
+            background: rgba(8, 127, 120, 0.2);
             color: var(--accent-teal) !important;
             border: 1px solid var(--accent-teal);
             padding: 0.4rem 1rem;
@@ -169,8 +169,8 @@
             margin-bottom: 1rem;
         }
 
-        .hero-title { font-size: 2.3rem; font-weight: 800; color: #FFFFFF !important; margin-bottom: 0.8rem; }
-        .hero-subtitle { font-size: 1.05rem; color: #E2E8F0 !important; max-width: 750px; margin: 0 auto; }
+        .hero-title { font-size: 2.3rem; font-weight: 700; color: #FFFFFF !important; margin-bottom: 0.8rem; }
+        .hero-subtitle { font-size: 1.05rem; color: #DDE5E1 !important; max-width: 750px; margin: 0 auto; }
 
         /* Main Container */
         .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
@@ -210,7 +210,7 @@
 
         .featured-content { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
         .category-tag { font-size: 0.8rem; font-weight: 700; color: var(--accent-teal); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
-        .featured-title { font-size: 1.75rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1rem; line-height: 1.4; }
+        .featured-title { font-size: 1.75rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 1rem; line-height: 1.4; }
         .featured-excerpt { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.5rem; }
 
         /* Article Grid */
@@ -282,7 +282,7 @@
         /* Buttons */
         .btn-cta {
             display: inline-block;
-            background: #00B4D8 !important;
+            background: #087F78 !important;
             color: #FFFFFF !important;
             font-weight: 700;
             padding: 0.8rem 1.8rem;
@@ -291,12 +291,12 @@
             text-align: center;
         }
 
-        .btn-cta:hover { background: #0077B6 !important; }
+        .btn-cta:hover { background: #06655F !important; }
 
         /* CTA Section */
         .cta-box {
-            background: #0A192F !important;
-            background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+            background: #123C3A !important;
+            background: linear-gradient(135deg, #123C3A 0%, #205B56 100%) !important;
             color: #FFFFFF !important;
             border-radius: var(--radius-lg);
             padding: 3.5rem 2rem;
@@ -305,12 +305,12 @@
             margin: 4rem auto 0 auto;
         }
 
-        .cta-box h2 { color: #FFFFFF !important; font-size: 2rem; margin-bottom: 0.8rem; font-weight: 800; }
-        .cta-box p { color: #E2E8F0 !important; font-size: 1.05rem; max-width: 650px; margin: 0 auto 1.5rem auto; }
+        .cta-box h2 { color: #FFFFFF !important; font-size: 2rem; margin-bottom: 0.8rem; font-weight: 700; }
+        .cta-box p { color: #DDE5E1 !important; font-size: 1.05rem; max-width: 650px; margin: 0 auto 1.5rem auto; }
 
         /* Footer */
         footer {
-            background-color: #0A192F !important;
+            background-color: #123C3A !important;
             color: #FFFFFF !important;
             padding: 3.5rem 1.5rem 2rem 1.5rem;
             text-align: center;
@@ -319,9 +319,10 @@
         }
 
         footer p { color: #FFFFFF !important; margin-bottom: 0.4rem; }
-        footer p strong { color: #00B4D8 !important; font-size: 1.1rem; }
+        footer p strong { color: #087F78 !important; font-size: 1.1rem; }
         .footer-copy { color: #94A3B8 !important; font-size: 0.85rem; margin-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.5rem; }
     </style>
+<link rel="stylesheet" href="../assets/theme.css">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -376,7 +377,7 @@
             </article>    
 
             <!-- Blog Grid Section Title -->
-            <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 2rem;">مقالات جراحات القرنية وتصحيح الإبصار</h2>
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 2rem;">مقالات جراحات القرنية وتصحيح الإبصار</h2>
 
             <!-- Blog Grid (13 Total Articles) -->
             <div class="blog-grid">

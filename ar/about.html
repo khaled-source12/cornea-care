@@ -11,7 +11,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -67,14 +67,14 @@
 
    <style>
     :root {
-        --primary-navy: #0A192F;
-        --accent-teal: #00B4D8;
-        --accent-hover: #0077B6;
-        --text-dark: #1E293B;
-        --text-muted: #64748B;
-        --bg-light: #F8FAFC;
+        --primary-navy: #123C3A;
+        --accent-teal: #087F78;
+        --accent-hover: #06655F;
+        --text-dark: #243735;
+        --text-muted: #5D706D;
+        --bg-light: #F7F6F2;
         --bg-white: #FFFFFF;
-        --border-color: #E2E8F0;
+        --border-color: #DDE5E1;
         --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
         --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
         --radius-md: 12px;
@@ -89,7 +89,7 @@
     }
 
     body {
-        font-family: 'Cairo', sans-serif;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
         color: var(--text-dark);
         background-color: var(--bg-light);
         line-height: 1.7;
@@ -123,7 +123,7 @@
     .header-links a:hover { color: var(--accent-teal); }
 
     .lang-switch {
-        font-weight: 800;
+        font-weight: 700;
         color: var(--accent-teal) !important;
         border: 1px solid var(--accent-teal);
         padding: 0.3rem 0.8rem;
@@ -134,8 +134,8 @@
 
     /* Fixed Hero Section Background & Visibility */
     .hero {
-        background: #0A192F !important; /* Force solid fallback navy background */
-        background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+        background: #123C3A !important; /* Force solid fallback navy background */
+        background: linear-gradient(135deg, #123C3A 0%, #205B56 100%) !important;
         color: #ffffff !important;
         padding: 4.5rem 1.5rem;
     }
@@ -151,7 +151,7 @@
 
     .hero-badge {
         display: inline-block;
-        background: rgba(0, 180, 216, 0.2);
+        background: rgba(8, 127, 120, 0.2);
         color: var(--accent-teal) !important;
         border: 1px solid var(--accent-teal);
         padding: 0.4rem 1rem;
@@ -163,7 +163,7 @@
 
     .hero-title { 
         font-size: 2.5rem; 
-        font-weight: 800; 
+        font-weight: 700; 
         line-height: 1.3; 
         margin-bottom: 1rem; 
         color: #FFFFFF !important; /* Force text visibility */
@@ -171,7 +171,7 @@
 
     .hero-subtitle { 
         font-size: 1.15rem; 
-        color: #E2E8F0 !important; 
+        color: #DDE5E1 !important; 
         margin-bottom: 2rem; 
     }
 
@@ -191,18 +191,18 @@
         text-align: center;
     }
 
-    .stat-number { font-size: 2rem; font-weight: 800; color: #00B4D8 !important; }
+    .stat-number { font-size: 2rem; font-weight: 700; color: #087F78 !important; }
     .stat-label { font-size: 0.85rem; color: #FFFFFF !important; }
 
     /* Fixed Doctor Profile Card & High-Contrast Button */
     .doc-card-wrapper {
         background: #FFFFFF !important;
-        color: #0A192F !important;
+        color: #123C3A !important;
         padding: 2.5rem;
         border-radius: 24px;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         text-align: center;
-        border: 1px solid #E2E8F0;
+        border: 1px solid #DDE5E1;
     }
 
     .doc-avatar {
@@ -215,7 +215,7 @@
         align-items: center;
         justify-content: center;
         font-size: 2.5rem;
-        font-weight: 800;
+        font-weight: 700;
         margin: 0 auto 1.5rem auto;
         border: 4px solid var(--accent-teal);
     }
@@ -223,7 +223,7 @@
     /* Button Fix */
     .btn-cta {
         display: inline-block;
-        background: #00B4D8 !important;
+        background: #087F78 !important;
         color: #FFFFFF !important;
         font-weight: 700;
         padding: 1rem 2.5rem;
@@ -233,7 +233,7 @@
         text-align: center;
     }
 
-    .btn-cta:hover { background: #0077B6 !important; }
+    .btn-cta:hover { background: #06655F !important; }
 
     /* Sections Layout */
     .section { padding: 4.5rem 1.5rem; }
@@ -242,7 +242,7 @@
 
     .section-title {
         font-size: 2.2rem;
-        font-weight: 800;
+        font-weight: 700;
         color: var(--primary-navy);
         margin-bottom: 0.8rem;
         text-align: center;
@@ -267,7 +267,7 @@
     .card-icon {
         width: 50px;
         height: 50px;
-        background: rgba(0, 180, 216, 0.1);
+        background: rgba(8, 127, 120, 0.1);
         color: var(--accent-teal);
         border-radius: 12px;
         display: flex;
@@ -283,8 +283,8 @@
 
     /* CTA Box Fix */
     .cta-box {
-        background: #0A192F !important; /* Fallback navy */
-        background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%) !important;
+        background: #123C3A !important; /* Fallback navy */
+        background: linear-gradient(135deg, #123C3A 0%, #205B56 100%) !important;
         color: #FFFFFF !important;
         border-radius: var(--radius-lg);
         padding: 3.5rem 2rem;
@@ -298,11 +298,11 @@
         color: #FFFFFF !important;
         font-size: 2rem;
         margin-bottom: 0.8rem;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     .cta-box p {
-        color: #E2E8F0 !important; /* Crisp high-contrast light blue-gray */
+        color: #DDE5E1 !important; /* Crisp high-contrast light blue-gray */
         font-size: 1.05rem;
         max-width: 600px;
         margin: 0 auto 1.5rem auto;
@@ -310,7 +310,7 @@
 
     /* Footer Fix */
     footer {
-        background-color: #0A192F !important;
+        background-color: #123C3A !important;
         color: #FFFFFF !important;
         padding: 3.5rem 1.5rem 2rem 1.5rem;
         text-align: center;
@@ -324,7 +324,7 @@
     }
 
     footer p strong {
-        color: #00B4D8 !important; /* Bright teal highlight for title */
+        color: #087F78 !important; /* Bright teal highlight for title */
         font-size: 1.1rem;
     }
 
@@ -398,6 +398,7 @@
         }
     }
 </style>
+<link rel="stylesheet" href="../assets/theme.css">
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZRLPZN2"
